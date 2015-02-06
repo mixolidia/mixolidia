@@ -5,16 +5,18 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 
   <meta name="author" content "Mixolidia Gautreaux" />
   <meta name="description" content="Mixolidia Gautreaux is a full-stack junior developer. Ruby, Rails, JavaScript, JQuery, HTML, CSS, Agile, TDD, CRUD." />
 </head>
-<body>
-  <header>
+<body class ="container">
+  <div class="header">
     <h1>
-      Mixolidia Gautreaux
+      Mixolidia<br />
+      Gautreaux
     </h1>
-  </header>
+  </div>
 <aside>
   GitHub
   LinkedIn
@@ -23,6 +25,5 @@
 </aside>
 
 <%= yield %>
-
 </body>
 </html>
