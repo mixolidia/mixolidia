@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Mixolidia Codes</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
-  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+  <head>
+    <title>Mixolidia Codes</title>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
 
-  <meta name="author" content "Mixolidia Gautreaux" />
-  <meta name="description" content="Mixolidia Gautreaux is a full-stack junior developer. Ruby, Rails, JavaScript, JQuery, HTML, CSS, Agile, TDD, CRUD." />
-</head>
-<body class ="container">
-  <div class="header">
-    <h1>
-      Mixolidia<br />
-      Gautreaux
-    </h1>
-  </div>
-<aside>
-  GitHub
-  LinkedIn
-  Twitter
-  Contact Me
-</aside>
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900,100italic,300italic,400italic,500italic,900italic,700italic,800italic' rel='stylesheet' type='text/css'>
 
-<%= yield %>
-</body>
+    <meta name="author" content "Mixolidia Gautreaux" />
+    <meta name="description" content="Mixolidia Gautreaux is a full-stack junior developer. Ruby, Rails, JavaScript, JQuery, HTML, CSS, Agile, TDD, CRUD." />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="header">
+        <div class="name">
+          <h1>
+            Mixolidia<br />
+            Gautreaux
+          </h1>
+        </div><!--name-->
+
+        <div class="contact">
+          <div class="g">
+            <%=link_to image_tag("github-6-16.png", alt: "Mixolidia's GitHub"), "https://github.com/mixolidia" %>
+          </div>
+          <div class="l">
+            <%=link_to image_tag("linkedin-16.png", alt: "Mixolidia's LinkedIn"), "https://www.linkedin.com/in/mixolidia" %>
+          </div>
+          <div class="t">
+            <%=link_to image_tag("twitter-16.png", alt: "@mix, Mixolidia's Twitter"), "https://twitter.com/mix" %>
+          </div>
+          <div class="e">
+            <%= mail_to "info@mixolidia.com", raw(image_tag("email-5-24.png", alt: "Email Mixolidia")) %>
+          </div>
+        </div><!--contact-->
+
+      </div><!--header-->
+
+      <div class="content">
+        <%= yield %>
+      </div><!--content-->
+    </div><!--container-fluid-->
+  </body>
 </html>
