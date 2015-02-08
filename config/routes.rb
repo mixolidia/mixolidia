@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     get   '/',           to: 'home#home',          as: :home
 
   # cv download
-    get "home/test.pdf"
+    get "home/CV",        to: 'home#download_pdf',             as: :home_test_pdf
 
   # code
     get   '/code',       to: 'code#narrative',     as: :code

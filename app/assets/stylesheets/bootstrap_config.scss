@@ -42,6 +42,11 @@ a:link, a:visited, a:hover, a:focus, a:active {
   width: 600px;
 }
 
+.ng:visited {
+  background-color: transparent;
+  color: #32CD32;
+  text-decoration: none;
+}
 .ng:hover {
   // background-color: transparent;
   background-color: #32CD32;
@@ -49,9 +54,21 @@ a:link, a:visited, a:hover, a:focus, a:active {
   text-decoration: none;
 }
 
+.np:visited {
+  background-color: transparent;
+  color: #FF1CAE;
+  text-decoration: none;
+}
+
 .np:hover {
   background-color: #FF1CAE;
   color: #010101;
+  text-decoration: none;
+}
+
+.nr:visited {
+  background-color: transparent;
+  color: #FF2400;
   text-decoration: none;
 }
 
