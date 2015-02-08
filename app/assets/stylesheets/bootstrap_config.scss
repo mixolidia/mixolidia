@@ -6,8 +6,8 @@ html, .container-fluid {
   color: #FFFFFF;
 }
 
-.content a:link, a:visited, a:hover, a:focus, a:active {
-  text-decoration: none !important
+a:link, a:visited, a:hover, a:focus, a:active {
+  text-decoration: none !important;
   }
 
 .header {
@@ -29,10 +29,6 @@ html, .container-fluid {
   float: left;
 }
 
-.g:hover {
-  background-image: url('github-6-16nb.png');
-}
-
 .content {
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 300;
@@ -41,4 +37,8 @@ html, .container-fluid {
   margin-top: 125px;
   float: left;
   width: 600px;
+}
+
+.content a {
+  text-decoration: none !important;
 }
