@@ -1,4 +1,15 @@
 Rails.application.routes.draw do
+
+  # navigation
+    root  'home#home'
+    get   '/',           to: 'home#home',          as: :home
+
+  # cv download
+    get "home/CV",        to: 'home#download_pdf',             as: :home_test_pdf
+
+  # code
+    get   '/code',       to: 'code#narrative',     as: :code
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
