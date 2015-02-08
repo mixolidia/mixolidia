@@ -8,7 +8,7 @@ html, .container-fluid {
 
 a:link, a:visited, a:hover, a:focus, a:active {
   text-decoration: none !important;
-  color: white;
+  color: #FFFFFF;
   }
 
 .header {
@@ -26,7 +26,7 @@ a:link, a:visited, a:hover, a:focus, a:active {
 .contact {
   float: right;
 }
-.g, .l, .t, .e {
+.g, .l, .t, , .c, .e {
   padding: 5px;
   float: left;
 }
@@ -42,23 +42,24 @@ a:link, a:visited, a:hover, a:focus, a:active {
   width: 600px;
 }
 
-.about .ng:hover{
-  background-color: transparent;
-  color: #32CD32;
-  text-decoration: none;
-}
-.about .np:hover{
-  background-color: transparent;
-  color: #FF1CAE;
+.ng:hover {
+  // background-color: transparent;
+  background-color: #32CD32;
+  color: #010101;
   text-decoration: none;
 }
 
-.about .nr:hover{
-  background-color: transparent;
-  color: #FF2400;
+.np:hover {
+  background-color: #FF1CAE;
+  color: #010101;
   text-decoration: none;
 }
 
+.nr:hover {
+  background-color: #FF2400;
+  color: #010101;
+  text-decoration: none;
+}
 
 .projects {
     padding-top: 10px;

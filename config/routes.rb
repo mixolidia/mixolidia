@@ -4,6 +4,9 @@ Rails.application.routes.draw do
     root  'home#home'
     get   '/',           to: 'home#home',          as: :home
 
+  # cv download
+    get "home/test.pdf"
+
   # code
     get   '/code',       to: 'code#narrative',     as: :code
 
