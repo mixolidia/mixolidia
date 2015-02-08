@@ -25,10 +25,15 @@ html, .container-fluid {
   float: left;
 }
 
+.g:hover {
+  background-image: url('github-6-16nb.png');
+}
+
 .content {
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 400;
   margin-left: 200px;
-  margin-top: 200px;
+  margin-top: 125px;
   float: left;
+  width: 600px;
 }
