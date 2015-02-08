@@ -1,4 +1,3 @@
-# require "prawn"
 class HomeController < ApplicationController
   def home
   end
