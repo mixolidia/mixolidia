@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mixolidia Gautreaux</title>
+    <title>Mixolidia Codes</title>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <%= csrf_meta_tags %>
@@ -36,7 +36,7 @@
             <%=link_to image_tag("twitter-16.png", alt: "@mix, Mixolidia's Twitter"), "https://twitter.com/mix", :target => "_blank" %>
           </div>
           <div class="c">
-            <%=link_to image_tag("paper-16.png", alt: "Mixolidia's CV"), home_test_pdf_path %>
+            <%=link_to image_tag("paper-16.png", alt: "Mixolidia's CV"), download_cv_path %>
           </div>
           <div class="e">
             <%= mail_to "info@mixolidia.com", raw(image_tag("email-5-24.png", alt: "Email Mixolidia")) %>
