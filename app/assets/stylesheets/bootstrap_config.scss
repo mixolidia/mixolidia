@@ -6,6 +6,10 @@ html, .container-fluid {
   color: #FFFFFF;
 }
 
+a:link, a:visited, a:hover, a:focus, a:active {
+  text-decoration: none !important
+  }
+
 .header {
   margin-top: 50px;
   position: absolute;
@@ -32,6 +36,7 @@ html, .container-fluid {
 .content {
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 300;
+  font-size: 1.25em;
   margin-left: 200px;
   margin-top: 125px;
   float: left;
