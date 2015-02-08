@@ -8,6 +8,7 @@ html, .container-fluid {
 
 a:link, a:visited, a:hover, a:focus, a:active {
   text-decoration: none !important;
+  color: white;
   }
 
 .header {
@@ -36,17 +37,31 @@ a:link, a:visited, a:hover, a:focus, a:active {
   font-size: 1.25em;
   margin-left: 200px;
   margin-top: 125px;
+  padding-left: 30px;
   float: left;
   width: 600px;
 }
 
-.content a {
-  text-decoration: none !important;
+.about .ng:hover{
+  background-color: transparent;
+  color: #32CD32;
+  text-decoration: none;
 }
+.about .np:hover{
+  background-color: transparent;
+  color: #FF1CAE;
+  text-decoration: none;
+}
+
+.about .nr:hover{
+  background-color: transparent;
+  color: #FF2400;
+  text-decoration: none;
+}
+
 
 .projects {
     padding-top: 10px;
-    padding-left: 30px;
 }
 
 .projects h3 {
