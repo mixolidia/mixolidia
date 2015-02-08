@@ -7,3 +7,4 @@ $(function() {
 });
 
 //Mixolidia Gautreaux link
+//will do later. Now it's an a tag
