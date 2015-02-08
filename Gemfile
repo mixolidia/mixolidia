@@ -8,6 +8,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
+gem 'spring',        group: :development
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem "therubyracer"
 # gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
