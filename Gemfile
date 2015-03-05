@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.1.8'
-gem 'pg'
+# gem 'pg'
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
@@ -23,4 +23,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap_form'
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
+  gem 'sqlite3', '~> 1.3.10'
+end
+group :production do
+  gem 'pg'
 end
