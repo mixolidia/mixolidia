@@ -45,6 +45,6 @@ Rails.application.configure do
     user_name:             ENV["MANDRILL_USERNAME"],
     password:              ENV["MANDRILL_PASSWORD"],
     authentication:        'plain',
-    enable_stattls_auto: true
+    enable_stattls_auto:    true
   }
 end
