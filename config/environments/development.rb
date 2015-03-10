@@ -34,4 +34,16 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_lmailer.smtp_settings = {
+    address:               'smtp.mandrillapp.com',
+    port:                  587,
+    domain:                'mixolidia.com',
+    user_name:             ENV["MANDRILL_USERNAME"],
+    password:              ENV["MANDRILL_PASSWORD"],
+    authentication:        'plain', 
+    enable_stattls_auto: true
+  }
 end
