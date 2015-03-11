@@ -14,6 +14,7 @@ gem "therubyracer"
 gem 'mail_form'
 gem 'simple_form'
 gem 'mandrill-rails'
+gem 'puma'
 # gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 # gem "twitter-bootstrap-rails"
 gem 'autoprefixer-rails'
