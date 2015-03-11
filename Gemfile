@@ -21,7 +21,6 @@ group :development do
   gem "better_errors"
   gem "binding_of_caller"
 end
-gem 'rails_12factor', group: :production
 gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap_form'
 group :development, :test do
@@ -30,4 +29,5 @@ group :development, :test do
 end
 group :production do
   gem 'pg'
+  gem 'rails_12factor'
 end
