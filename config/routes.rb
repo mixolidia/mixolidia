@@ -1,8 +1,6 @@
 require 'mail'
 Rails.application.routes.draw do
 
-  get 'contact/new'
-
   # navigation
     root  'home#home'
     get   '/',           to: 'home#home',             as: :home
@@ -14,6 +12,7 @@ Rails.application.routes.draw do
     get   '/code',       to: 'code#narrative',        as: :code
 
   # contact form
+    get 'contact/new'
     match     '/contact',     to: 'contact#new',             via: 'get'
     resources 'contact',     only: [:new, :create]
 
