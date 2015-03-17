@@ -3,18 +3,18 @@ Rails.application.routes.draw do
 
   # navigation
     root  'home#home'
-    get   '/',           to: 'home#home',             as: :home
+    # get   '/',                to: 'home#home',             as: :home
 
   # cv download
-    get "home/CV",        to: 'home#download_pdf',    as: :download_cv
+    get "home/CV",            to: 'home#download_pdf',     as: :download_cv
 
   # code
-    get   '/code',       to: 'code#narrative',        as: :code
+    get '/code',              to: 'code#narrative',        as: :code
 
   # contact form
-    get 'contact/new'
-    match     '/contact',     to: 'contact#new',             via: 'get'
-    resources 'contact',     only: [:new, :create]
+    get 'contact/new',        to: 'contact#new',           as: :contact
+    # get     '/contact/new',     to: 'contact#new',          as: :contact
+    # resources 'contact',    only: [:new, :create]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

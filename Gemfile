@@ -17,6 +17,8 @@ gem 'mandrill-rails'
 # gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 # gem "twitter-bootstrap-rails"
 gem 'autoprefixer-rails'
+gem 'dotenv-rails', :groups => [:development, :test]
+
 
 group :development do
   gem "better_errors"
