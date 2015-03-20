@@ -8,7 +8,6 @@
 
     <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900,100italic,300italic,400italic,500italic,900italic,700italic,800italic' rel='stylesheet' type='text/css'>
     <%= favicon_link_tag 'favicon.ico', type: 'image/ico' %>
-    <!-- <%= favicon_link_tag 'https://imgflip.com/gif/hdbe4', type: 'image/gif'  %> -->
 
     <meta name="author" content "Mixolidia Gautreaux" />
     <meta name="description" content="Mixolidia Gautreaux is a full-stack junior developer. Ruby, Rails, JavaScript, JQuery, HTML, CSS, Agile, TDD, CRUD." />
@@ -21,8 +20,6 @@
             <h1>
             Mixolidia<br />
              Gautreaux<br />
-            <!-- <%#= link_to "Mixolidia", home_path %><br />
-            <%#= link_to"Gautreaux", home_path %> -->
           </h1>
         </a>
         </div><!--name-->
@@ -36,9 +33,6 @@
           </div>
           <div class="t">
             <%=link_to image_tag("twitter-16.png", alt: "@mix, Mixolidia's Twitter"), "https://twitter.com/mix", :target => "_blank" %>
-          </div>
-          <div class="c">
-            <%=link_to image_tag("paper-16.png", alt: "Mixolidia's CV"), download_cv_path %>
           </div>
           <div class="e">
             <%= mail_to "info@mixolidia.com", raw(image_tag("email-5-24.png", alt: "Email Mixolidia")) %>
