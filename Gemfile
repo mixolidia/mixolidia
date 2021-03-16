@@ -18,7 +18,7 @@ gem 'mandrill-rails'
 # gem "twitter-bootstrap-rails"
 gem 'autoprefixer-rails'
 gem 'dotenv-rails', :groups => [:development, :test]
-gem 'railties', '~> 5.0', '>= 5.0.0.1'
+gem 'railties', '~> 6.1', '>= 6.1.3'
 
 group :development do
   gem "better_errors"
